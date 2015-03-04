@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html manifest="cache.appcache">
+  <head>
+    <title>Curency Convertor</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="icon" sizes="96x96" href="img/icon.png" />
+    <link rel="apple-touch-icon" href="img/icon.png" />
+    <!-- removed the rel shortcut icon because it is specific to IE -->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <header>Travel Rates</header>
+    <nav>
+      <span id="menuToggle"><img src="img/menu-ham.png" alt="Menu"></span>
+      <ul id="menu" style="display: none;">
+      </ul>
+    </nav>
+    <main>
+      <div id="display">
+	<span id="quant"></span>
+	<span id="cur"></span>
+      </div>
+      <div id="keypad">
+	<button id="but7">7</button>
+	<button id="but4">4</button>
+	<button id="but1">1</button>
+	<button id="clear">c</button>
+	<button id="but8">8</button>
+	<button id="but5">5</button>
+	<button id="but2">2</button>
+	<button id="but0">0</button>
+	<button id="but9">9</button>
+	<button id="but6">6</button>
+	<button id="but3">3</button>
+	<button id="eval">=</button>
+      </div>
+    </main>
+    <footer>
+      &copy; 2015 Iain Logan - 201209999
+    </footer>
+    <script src="convertorView.js"></script>
+    <script src="convertorModel.js"></script>
+    <script src="convertorController.js"></script>
+  </body>
+</html>
